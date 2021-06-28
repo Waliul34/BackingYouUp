@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/imageView"
+            app:cardCornerRadius = "@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:scaleType="centerCrop"
+                app:tint = "#2118c7"
+                android:src="@drawable/ic_call_logs_single_contact"
+                android:id="@+id/singleContactImageView"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/recy_call_logs_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="Waliul Islam Sumon"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recy_call_logs_contact_phone"
+            android:text="+8801709186979"
+            android:textIsSelectable="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_below="@id/recy_call_logs_contact_name"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_12sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recy_call_logs_duration"
+            android:text="Incoming: 3m 53s"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@id/recy_call_logs_contact_phone"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_12sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recy_call_logs_day"
+            android:text="May 21 11:10:23 PM"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@id/recy_call_logs_duration"
+            android:layout_marginLeft="@dimen/_12sdp"/>
+
+
+        <ImageButton
+            android:id="@+id/recy_call_logs_make_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_make_call"
+            android:backgroundTint="@color/light_color"
+            android:tint="@color/green" />
+
+        <ImageButton
+            android:id="@+id/recy_call_logs_send_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send_message"
+            android:backgroundTint="@color/light_color"
+            android:tint="@color/purple_500" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

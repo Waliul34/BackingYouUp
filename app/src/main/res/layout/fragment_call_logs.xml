@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewSearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="match_parent"
+            android:background="#A3B3B3B3"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:background="#00000000"
+                android:padding="@dimen/_5sdp" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_225sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/ic_cancel" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_253sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8sdp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCallLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewSearch"
+        app:layout_constraintVertical_bias="0.014"
+        tools:layout_editor_absoluteX="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/searchContact"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_110sdp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        app:fabCustomSize="@dimen/_32sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_search"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_apps"
+            android:visible="false"
+            android:icon="@drawable/ic_apps"
+            android:title="Apps"/>
+        <item android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_contacts"
+            android:title="Contacts"/>
+        <item android:id="@+id/nav_call_statistics"
+            android:icon="@drawable/ic_call_statistics"
+            android:title="Call Statistics"/>
+        <item android:id="@+id/nav_message"
+            android:visible="false"
+            android:icon="@drawable/ic_message"
+            android:title="Messages"/>
+        <item android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_my_profile"
+            android:title="My Profile"/>
+
+    </group>
+</menu>

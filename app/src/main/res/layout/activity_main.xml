@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    android:background="@drawable/gradient_list"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/signinBtn"
+        android:layout_width="187dp"
+        android:layout_height="77dp"
+        android:text="Sign In"
+        android:textSize="24sp"
+        app:backgroundTint="#4F17831C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="180dp"
+        android:layout_height="72dp"
+        android:text="SIGN UP"
+        android:textSize="24sp"
+        app:backgroundTint="#391928B1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinBtn"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <ImageButton
+        android:id="@+id/aboutDevBtn"
+        android:layout_width="@dimen/_350sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:adjustViewBounds="true"
+        android:background="#414CAF50"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signupBtn"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="@+id/signupBtn"
+        app:layout_constraintTop_toBottomOf="@+id/signupBtn"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/about_dev" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

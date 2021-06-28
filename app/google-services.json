@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "609765582650",
+    "project_id": "backing-you-up-0",
+    "storage_bucket": "backing-you-up-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609765582650:android:2899bab4305bc8e8911203",
+        "android_client_info": {
+          "package_name": "com.reddredd.backingyouup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609765582650-eeikf8q58btu684ir90ffjmju2lt992a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpz5Va0_QPT67SZiQshv0T8sa2_DwXi0E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609765582650-eeikf8q58btu684ir90ffjmju2lt992a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

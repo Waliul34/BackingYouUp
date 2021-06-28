@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+
+    <ImageView
+        android:id="@+id/defaultProfilePic"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_profile_pic" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/defaultProfilePic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/defaultProfilePic" />
+
+    <Button
+        android:id="@+id/changePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_160sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_27sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:text="Change Photo"
+        app:backgroundTint="#02953F"
+        app:layout_constraintBottom_toTopOf="@+id/nameShow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defaultProfilePic" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:fontFamily="@font/fugaz_one"
+        android:text="Name: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17ssp"
+        app:layout_constraintEnd_toStartOf="@+id/nameShow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defaultProfilePic" />
+
+    <TextView
+        android:id="@+id/nameShow"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:fontFamily="@font/fugaz_one"
+        android:text="Waliul Islam Sumon"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toEndOf="@+id/textName"
+        app:layout_constraintTop_toBottomOf="@+id/changePhoto" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:fontFamily="@font/fugaz_one"
+        android:text="Email: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17ssp"
+        app:layout_constraintEnd_toStartOf="@+id/emailShow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <TextView
+        android:id="@+id/emailShow"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:fontFamily="@font/fugaz_one"
+        android:text="sumon1807034@stud.kuet.ac.bd"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textEmail"
+        app:layout_constraintTop_toBottomOf="@+id/nameShow" />
+
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_23sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_160sdp"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:text="Delete Account"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#D50000"
+        app:layout_constraintBottom_toTopOf="@+id/signoutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailShow" />
+
+    <Button
+        android:id="@+id/signoutBtn"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Sign Out"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/white"
+        app:backgroundTint="#6200EA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

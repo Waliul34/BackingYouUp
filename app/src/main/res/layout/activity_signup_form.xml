@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".signup_form">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:background="#00FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#6B000000"
+        app:hintTextColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49">
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#03FFFFFF"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingTop="@dimen/_18sdp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14ssp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout3"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:background="#00FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#6B000000"
+        app:hintTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#03FFFFFF"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:paddingTop="@dimen/_18sdp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout2"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:background="#00FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#6B000000"
+        app:hintTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#03FFFFFF"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/_18sdp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14ssp"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/textInputLayout4"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:background="#00FFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="#6B000000"
+        app:hintTextColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#03FFFFFF"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingTop="@dimen/_18sdp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14ssp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:visibility="gone"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_28sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_22sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Gender: "
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_17ssp" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:checked="true"
+            android:text="Male"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14ssp" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:text="Female"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14ssp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_150sdp"
+        android:text="Create Your Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <![CDATA[
+
+    />
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>
