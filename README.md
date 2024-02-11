@@ -1,1 +1,1 @@
- 
+Backing You Up is an app for backing up personal data. As the name says, this app will watch your back. Currently this app is able to backup contacts in the cloud and also you can watch your call statistics like top 5 contacts based on call duration. 
